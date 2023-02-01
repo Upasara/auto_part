@@ -25,10 +25,7 @@
    
 }
 
-/*.content a{
-    color: var(--secondary-color);
 
-}*/
 .content a:hover{
     color: #000;
 }

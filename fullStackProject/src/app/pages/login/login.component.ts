@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit{
   }
   login(){
     
-    // alert("Login Successfull")
+
 
     const data = this.loginForm.value;
     this.auth.signin(data).subscribe((res) =>{
