@@ -23,3 +23,22 @@ table{
 .container{
     margin-top: 30px;
 }
+
+#cash{
+    margin-top: 80px;
+    text-align: center;
+
+}
+
+h6{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 22px;
+    color: var(--secondary-color);
+}
+
+h5{
+    font-weight: bold;
+    font-size: 25px;
+    color: red;
+}

@@ -22,8 +22,6 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { AdminComponent } from './pages/admin/admin.component';
 import { ChatComponent } from './pages/chat/chat.component';
 import { AdminLoginComponent } from './pages/admin-login/admin-login.component';
-import { ChetComponent } from './pages/chet/chet.component';
-import { Chet2Component } from './pages/chet2/chet2.component';
 
 
 @NgModule({
@@ -44,9 +42,7 @@ import { Chet2Component } from './pages/chet2/chet2.component';
     ProfileComponent,
     AdminComponent,
     ChatComponent,
-    AdminLoginComponent,
-    ChetComponent,
-    Chet2Component
+    AdminLoginComponent
   ],
   imports: [
     BrowserModule,

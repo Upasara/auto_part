@@ -1,5 +1,3 @@
-import { Chet2Component } from './pages/chet2/chet2.component';
-import { ChetComponent } from './pages/chet/chet.component';
 import { AdminLoginComponent } from './pages/admin-login/admin-login.component';
 import { ChatComponent } from './pages/chat/chat.component';
 import { AdminComponent } from './pages/admin/admin.component';
@@ -31,8 +29,6 @@ const routes: Routes = [
   {path:'admin', component:AdminComponent},
   {path:'chat', component:ChatComponent},
   {path:'adminlog11023', component:AdminLoginComponent},
-  {path:'chatlApp', component:ChetComponent},
-  {path:'chatIApp', component:Chet2Component},
   {path:'', component:ProfileComponent}
 ];
 
