@@ -1,0 +1,90 @@
+
+    <div class="row" id="pro">
+        <div class="col">
+            <!-- <h3>Hello {{data.displayName}}</h3> -->
+            Name : Upasara Sam
+        </div>
+        <div class="col">
+            <!-- <p>Phone no : {{data.phone}}</p> -->
+            Phone no: 0123456789
+        </div>
+        <div class="col">
+            <!-- <p>Delivary Address : {{data.address}}</p> -->
+            Delivary Address : 125/4,Homagama
+        </div>
+        <div class="col">
+            <a href="" class="btn btn-danger btn-sm" (click)="logout()">Logout</a>
+        </div>
+</div>
+
+
+
+    <section class="Material-contact-section section-padding section-dark">
+      <div class="container" id="container">
+          <div class="row">
+
+
+              <div class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft" data-wow-delay=".2s" id="contactinfo">
+                <h2 id="contacth">Contact Info</h2>
+                
+                
+
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <h6><i class="bi bi-building " id="icon"></i> &nbsp;RATHAYA</h6>  
+                  </li>
+  
+                  <li>
+                    <h6><i class="bi bi-geo-alt-fill " id="icon"></i> &nbsp;255/B, Pitipana, Colombo</h6>  
+                  </li>
+
+                  <li>
+                    <h6><i class="bi bi-telephone-fill " id="icon"></i> &nbsp;0123456789</h6>  
+                  </li>
+
+                  <li>
+                    <h6><i class="bi bi-envelope-at-fill " id="icon"></i> &nbsp;rathaya@gmail.com</h6>  
+                  </li>
+              </ul>
+              <br><br>
+              <p>Contact our auto shop through above details</p>
+              <br><br>
+              <p><a class="btn btn-success btn-rounded " routerLink="/chatlApp" id="talk"><i class="bi bi-chat-dots-fill"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;Talk with auto shop</p>
+              </div>
+
+
+
+              <div class="col-md-6 " data-wow-delay=".2s" id="feedback">
+                <h2 id="feedbackh">Leave Your Feedback Here</h2>
+                  <form class="shake" role="form" method="post" id="contactForm" data-toggle="validator">
+
+                      <div class="form-group label-floating">
+                        <label class="control-label" for="name">Name :-</label>
+                        <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
+                        <div class="help-block with-errors"></div>
+                      </div>
+
+                      <div class="form-group label-floating">
+                        <label class="control-label" for="email">Email :-</label>
+                        <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      
+
+                      <div class="form-group label-floating">
+                          <label for="message" class="control-label">Feed Back :-</label>
+                          <textarea class="form-control" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
+                          <div class="help-block with-errors"></div>
+                      </div>
+
+                      <div class="form-submit mt-5">
+                          <button class="btn btn-secondary" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i> Send Feedback</button>
+                          <div id="msgSubmit" class="h3 text-center hidden"></div>
+                          <div class="clearfix"></div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </section>
+

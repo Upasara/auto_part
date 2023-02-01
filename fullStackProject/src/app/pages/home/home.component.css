@@ -1,0 +1,55 @@
+/* logout panel */
+.row{
+    background-color: rgb(126, 124, 167);
+    padding: 10px;
+}
+.banner{
+    background-image: url('../../../assets/images/banner.jpg');
+    
+    height: 450px;
+    background-position: center;
+    background-size: cover;
+}
+
+.content{
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    top: 30%;
+    position: relative;
+}
+
+.content h1{
+    color: var(--secondary-color);
+    font-size: 55px;
+    font-weight: bold;
+   
+}
+
+/*.content a{
+    color: var(--secondary-color);
+
+}*/
+.content a:hover{
+    color: #000;
+}
+
+/*vehicle select button*/
+.select{
+    padding: 30px;
+    text-align: center;
+}
+
+.select h5{
+    padding-bottom: 20px;
+    font-style: italic;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+p{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 19px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

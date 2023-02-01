@@ -1,0 +1,58 @@
+
+    <div class="row">
+        <div class="col">
+            <!-- <h3>Hello {{data.displayName}}</h3> -->
+            Name : Upasara Sam
+        </div>
+        <div class="col">
+            <!-- <p>Phone no: {{data.phone}}</p> -->
+            Phone : 0123456789
+        </div>
+        <div class="col">
+            <!-- <p>Address: {{data.address}}</p> -->
+            Delivary Address : 125/4,Homagama
+        </div>
+        <div class="col">
+            <a href="" class="btn btn-danger btn-sm" (click)="logout()">Logout</a>
+        </div>
+</div>
+<!-- vehicle select button  -->
+<div class="select">
+    <div class="mt-4 mb-4">
+        <h5>Select your vehicle type</h5>
+    <span class="btn btn-warning">
+    <ul class="navbar-nav ">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Select Vehicle    <i class="bi bi-truck-front-fill"></i>
+            </a>
+            <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/cycle" routerLinkActive="active-link">Motor Cycle</a></li>
+            <li><a class="dropdown-item" routerLink="/three-wheel" routerLinkActive="active-link">Three Wheel</a></li>
+            <li><a class="dropdown-item" routerLink="/car" routerLinkActive="active-link">Car</a></li>
+            <li><a class="dropdown-item" routerLink="/van" routerLinkActive="active-link">Van</a></li>
+            <li><a class="dropdown-item" routerLink="/lorry" routerLinkActive="active-link">Lorry</a></li>
+            </ul>
+        </li>
+    </ul>
+    </span>
+    </div>
+</div>
+
+<!-- partcards -->
+<div class="container mt-4 mb-4">
+    <h5 class="text-center">Van Parts</h5>
+    <div class="row">
+
+        <div class="col-lg-3 mt-3" *ngFor="let UserItem of UserArray">
+            <div class="partcard">
+                <img src="{{UserItem.image}}" />
+                <h2>{{UserItem.pname}}</h2>
+                <h3>{{UserItem.vmodel}}</h3>
+                <h4>{{UserItem.pprice}}</h4>
+                <p>{{UserItem.pdetails}}</p>
+                <a  class="buybtn">Order&nbsp;<i class="bi bi-cart3" routerLink="/cart"></i></a>
+            </div>
+        </div>
+    </div>
+</div>

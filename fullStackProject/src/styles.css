@@ -1,0 +1,18 @@
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #cBdBe4;
+}
+:root{
+    --primary-color:#52ab98;
+    --secondary-color:#2b6777;
+
+}
+body{
+    height: 100vh;
+    font-family: sans-serif;
+}

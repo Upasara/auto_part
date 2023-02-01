@@ -1,0 +1,13 @@
+<div class="container">
+    <p><strong>Customer : Upasara Sam</strong></p>
+</div>
+<div id="chat-box">
+    <div id="chat-window">
+      
+      <div id="feedback"><p>hello</p></div>
+      <div id="feedback2"><p> {{displayMsg}}</p></div>
+    </div>
+    <input id="handle" type="text" #box  name="name" placeholder="Name" />
+    <input id="message" type="text" #box2 name="msg" placeholder="Message" autocomplete="off"  />
+    <button type="button" id="send" style="cursor: pointer;" (click)="getValue(box.value,box2.value)">Send</button>
+</div>

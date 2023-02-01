@@ -1,0 +1,7 @@
+/*.navbar-nav .nav-item {
+    color: var(--secondary-color);
+}*/
+.active-link{
+    color: var(--primary-color);
+    font-weight: bold;
+}

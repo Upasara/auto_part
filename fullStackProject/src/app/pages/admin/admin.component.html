@@ -1,0 +1,95 @@
+<div class="row">
+  <div class="container" id="text">
+    <p><a class="btn btn-success btn-rounded " routerLink="/chatIApp" id="talk"><i class="bi bi-chat-dots-fill"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;Messages</p>
+  </div>
+</div>
+
+<div class="container mt-5">
+
+        <form>
+            <div class="form-group">
+              <label >Vehicle Part Name :</label>
+              <input type="text" [(ngModel)]="pname" [ngModelOptions]="{standalone:true}" class="form-control" id="pname">
+            </div>
+            <div class="form-group">
+              <label >Vehicle Model :</label>
+              <input type="text" [(ngModel)]="vmodel" [ngModelOptions]="{standalone:true}" class="form-control" id="vmodel" >
+            </div>
+            <div class="form-group">
+              <label >Vehicle Part Details :</label>
+              <input type="text" [(ngModel)]="pdetails" [ngModelOptions]="{standalone:true}" class="form-control" id="pdetails" >
+            </div>
+            <div class="form-group">
+              <label >Vehicle Part Price :</label>
+              <input type="text"  [(ngModel)]="pprice" [ngModelOptions]="{standalone:true}" class="form-control" id="pprice" >
+            </div>
+            <div class="form-group">
+              <label >Vehicle Part Image Link :</label>
+              <input type="text"  [(ngModel)]="image" [ngModelOptions]="{standalone:true}" class="form-control" id="image" >
+            </div>
+
+            <div class="form-group">
+              <label >Vehicle Catogery :</label>
+              <input type="text"  [(ngModel)]="vcato" [ngModelOptions]="{standalone:true}" class="form-control" id="vcato" >
+            </div>
+ 
+            <button type="submit" (click)="save()" class="btn btn-success">Submit</button>
+          </form>
+    <!-- </div> -->
+</div>
+
+<div class="parts">
+<div class="container mt-4">
+  <h1>List of Vehicle Parts</h1>
+  <table class="table table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <th>Part Name</th>
+        <th>Vehicle Model</th>
+        <th>Details</th>
+        <th>Price</th>
+        <th>Vehicle Catogery</th>
+        <th>Option</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let UserItem of UserArray">
+        <td>{{UserItem.pname | uppercase }}</td>
+        <td>{{UserItem.vmodel}}</td>
+        <td>{{UserItem.pdetails}}</td>
+        <td>{{UserItem.pprice}}</td>
+        <td>{{UserItem.vcato}}</td>
+        <td>
+          <button type="button" class="btn btn-success" (click)="setUpdate(UserItem)">Edit</button><br><br>
+          <button type="button" class="btn btn-danger" (click)="setDelete(UserItem)">Remove</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+</div>
+
+<!-- Customer orders -->
+<div class="container">
+  <h1>Customer Orders</h1>
+  <table class="table ">
+      <thead>
+        <tr>
+          <th scope="col">Customer Name</th>
+          <th scope="col">Address</th>
+          <th scope="col">Item</th>
+          <th scope="col">Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Upasara Sam</th>
+          <th>125/4,Homagama</th>
+          <th>Break Pad</th>
+          <td>Rs.6000</td>
+        </tr>
+      </tbody>
+    </table>
+
+</div>

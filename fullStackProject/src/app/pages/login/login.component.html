@@ -1,0 +1,27 @@
+
+<div class="container col-md-6">
+    <div class="image">
+        <img src="../../../assets/images/prologo.png"/>
+    </div>
+    <div class="heading">
+        <h4>Login Here</h4>
+    </div>
+    <form [formGroup]="loginForm">
+        <div class="form-group">
+          <label for="email">Email :</label>
+          <input type="email" class="form-control" id="email" placeholder="samgeller123@gmail.com" formControlName="email">
+        </div>
+        <div class="form-row">
+          <div class="form-group ">
+            <label for="password">Password :</label>
+            <input type="password" class="form-control" id="password" formControlName="password">
+          </div>
+          
+        </div>
+        <div class="button">
+            <button type="submit" class="btn btn-lg" (click)="login()" >Login</button> 
+        </div>    
+        
+    </form>
+        
+</div>

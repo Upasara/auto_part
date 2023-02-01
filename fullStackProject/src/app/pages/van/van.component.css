@@ -1,0 +1,53 @@
+.row{
+    background-color: rgb(126, 124, 167);
+    padding: 10px;
+}
+/* css for the partscards*/
+.partcard{
+
+    padding: 10px 10px;
+    background-color: #f2f2f2;
+    border-radius: 6px;
+
+}
+
+.partcard img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 6px;
+    
+}
+
+.partcard h2{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.partcard h3{
+    font-size: 15px;
+}
+
+.partcard h4{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.text-center{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/*vehicle select button*/
+.select{
+    padding: 30px;
+    text-align: center;
+}
+
+.select h5{
+    padding-bottom: 20px;
+    font-style: italic;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
